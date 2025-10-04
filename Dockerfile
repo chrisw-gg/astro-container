@@ -2,6 +2,8 @@ FROM node:lts
 
 COPY docker-entrypoint.sh /
 
+RUN chmod +x /docker-entrypoint.sh
+
 WORKDIR /build
 
 # Copy package.json and package-lock.json to install dependencies
