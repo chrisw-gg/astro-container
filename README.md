@@ -1,15 +1,11 @@
-# Build
-
-docker build -t astro --progress=plain .
-
 # Run Dev Mode
 
-docker run --rm -itp 4321:4321 -v "$(pwd):/app" astro dev
+docker run --rm -itp 4321:4321 -v "$(pwd):/app" ghcr.io/chrisw-gg/astro-container:main dev
 
 # Generate static site (outputs to $(pwd)/dist directory)
 
-docker run --rm -v "$(pwd):/app" astro build
+docker run --rm -v "$(pwd):/app" ghcr.io/chrisw-gg/astro-container:main build
 
 # Extract package-lock.json (after updating dependencies)
 
-docker run --rm astro packages > package-lock.json
+docker run --rm ghcr.io/chrisw-gg/astro-container:main packages > package-lock.json
