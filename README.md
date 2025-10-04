@@ -1,3 +1,7 @@
+# Pull latest
+
+docker pull ghcr.io/chrisw-gg/astro-container:main
+
 # Run Dev Mode
 
 docker run --rm -itp 4321:4321 -v "$(pwd):/app" ghcr.io/chrisw-gg/astro-container:main dev
