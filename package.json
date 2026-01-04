@@ -2,12 +2,6 @@
   "name": "astro-container",
   "type": "module",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
   "dependencies": {
     "astro": "5.13.8",
     "astro-auto-import": "0.4.4",
