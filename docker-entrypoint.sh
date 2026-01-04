@@ -15,6 +15,9 @@ case "$1" in
     "packages")
     exec cat /build/package-lock.json
     ;;
+    "bash")
+    exec /bin/bash
+    ;;
     *)
     echo "Unknown command: $1"
     ;;
